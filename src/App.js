@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Timer from './components/Timer/Timer';
+import SettingsContext from './utils/SettingsContext';
 
 function App() {
+  const [workMinutes, setWorkMinutes] = useState(25);
+  const [breakMinutes, setBreakMinutes] = useState(5);
+  const [counterText, setCounterText] = useState("Click the button below to start the timer")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SettingsContext.Provider value={{
+      workMinutes,
+      breakMinutes,
+      counterText,
+      setWorkMinutes,
+      setBreakMinutes,
+      setCounterText
+    }}>
+      <Timer />
+    </SettingsContext.Provider>
   );
 }
 
