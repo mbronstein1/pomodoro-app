@@ -1,5 +1,5 @@
 # Pomodoro App
-A simple pomdoro timer application to allow a user to remain focused during work and take necessary breaks.
+A simple pomodoro timer application to allow a user to remain focused during work and take necessary breaks.
 
 [Link to Wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 
