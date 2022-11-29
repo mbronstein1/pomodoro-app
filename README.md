@@ -1,5 +1,6 @@
-# Pomodoro App
+# REACT Pomodoro App
 A simple pomodoro timer application to allow a user to remain focused during work and take necessary breaks.
+Made with ReactJS
 
 [Link to Wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 
